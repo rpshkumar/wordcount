@@ -1,0 +1,14 @@
+<h3>Counted Words</h3>
+
+<a href="{% url 'home' %}">Count words Again</a>
+<h4>Your Text:</h4>
+{{ textreply }}
+<br>
+<h4>Word Count:</h4>
+<p>The total no. of words: {{ wordcount }}</p>
+<br><br>
+
+{% for word,value in word_dict1 %}
+{{ word }} : {{ value }}
+<br/>
+{% endfor %}

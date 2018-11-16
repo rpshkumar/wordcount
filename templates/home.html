@@ -1,0 +1,21 @@
+
+<head>
+  <link rel="stylesheet" href="css/color.css" type="text/css">
+</head>
+<body>
+
+<h3>WordCount</h3>
+<p class="textcolor">Welcome to wordcount website!</p>
+<br/><br/>
+
+<a href="{% url 'about' %}">About Us</a>
+<p>Type your text here to count:</p>
+<form action="{% url 'count' %}">
+  <textarea name="countreply" rows="12" cols="40"></textarea>
+  <br>
+  <input type="submit" name="submit" value="count"/>
+
+
+
+</form>
+</body>
